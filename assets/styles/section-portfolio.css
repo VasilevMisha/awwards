@@ -1,0 +1,126 @@
+.section-portfolio{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	color: #565656;
+}
+.portfolio{
+	padding: 30px 0;
+}
+.portfolio-info{
+	padding: 15px 10px;
+
+}
+.portfolio-title{
+	margin-bottom: 15px;
+	font-size: 40px;
+	font-weight: 900;
+	color: #565656;
+	text-transform: uppercase;
+}
+.portfolio-desc{
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.portfolio-btn{
+	padding: 20px;
+	background-color: #dedbee;
+	border: none;
+	width: 100%;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+.gallery-item{
+	width: 100%;
+}
+.gallery-item img{
+	max-width: 100%;
+	min-height: 250px;
+}
+
+@media screen and (min-width: 786px){
+	.portfolio{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		overflow: hidden;
+	}
+	.portfolio-info{
+		height: 400px;
+		width: 37%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: #f4f4f4;
+		transform: translateX(50px);
+		z-index: 8;
+	}
+	.portfolio-gallery{
+		z-index: 1;
+		width: 60%;
+		overflow: hidden;
+	}
+
+	.gallery-item {
+		height: 450px;	
+	}
+	
+	.portfolio-btn{
+		display: flex;
+		height: 200px;
+		margin-bottom: 60px;
+		align-items: center;
+		justify-content: center;
+	}
+
+}
+@media screen and (min-width: 786px){
+	.portfolio{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		overflow: hidden;
+	}
+	.portfolio-info{
+		height: 400px;
+		width: 37%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: #f4f4f4;
+		transform: translateX(50px);
+		z-index: 8;
+	}
+	.portfolio-gallery{
+		z-index: 1;
+		width: 60%;
+		overflow: hidden;
+	}
+
+	.gallery-item {
+		height: 450px;	
+	}
+	
+	.portfolio-btn{
+		display: flex;
+		height: 200px;
+		margin-bottom: 60px;
+		align-items: center;
+		justify-content: center;
+	}
+	.portfolio-title{
+		display: flex;
+		height: 200px;
+		margin-top: 40px;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.section-portfolio .container {
+		width: 1024;
+	}
+}

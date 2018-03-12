@@ -1,0 +1,41 @@
+*{
+	box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, a, p, ul{
+	margin: 0;
+	font-family: "Mont";
+	color: #565656;
+}
+
+h1,
+h2{
+	user-select: none;
+	color: #ffffff;
+}
+
+body{
+	background-color: #f4f4f4;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+h1{
+	font-size: 80px;
+}
+
+h2{
+	font-size: 22px;
+	font-weight: 200px;
+}
+
+
+

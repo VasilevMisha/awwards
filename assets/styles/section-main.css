@@ -1,0 +1,98 @@
+.section-main{
+	height: calc(100vh - 60px);
+	display: flex;
+	align-items: center;	
+}
+
+.main-content{
+	padding: 0 20px;
+}
+
+h1.-fromAbove{
+	transform: translateY(-100%);
+	transition: .3s ease-out;
+}
+
+h2.-fromBeyond{
+	transform: translateY(100%);
+	transition: .5s ease-out;
+}
+
+.title, .subtitle{
+	overflow: hidden;
+}
+
+h1.-animated, h2.-animated{
+	transform: translateY(0);
+}
+
+
+canvas {
+  position: absolute;
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  width: 100%;
+  background-color: #f4f4f4;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+@media  screen and (min-width: 768px) {
+	h1{
+		font-size: 100px;
+		margin-left: 5px;
+	}
+
+	h2{
+		font-size: 30px;
+		margin-left: 5px;
+	}
+}
+
+@media  screen and (min-width: 1024px) {
+	h1{
+		font-size: 135px;
+		margin-left: 8px;
+	}
+
+	h2{
+		font-size: 50px;
+		margin-left: 8px;
+	}
+}
+
+@media  screen and (min-width: 1440px) {
+	h1{
+		font-size: 170px;
+		margin-left: 15px;
+	}
+
+	h2{
+		font-size: 65px;
+		margin-left: 15px;
+	}
+}
+
+@media  screen and (min-width: 1600px) {
+	h1{
+		font-size: 200px;
+		margin-left: 20px;
+	}
+
+	h2{
+		font-size: 80px;
+		margin-left: 20px;
+	}
+}
+

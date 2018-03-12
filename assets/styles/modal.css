@@ -1,0 +1,91 @@
+.modal{
+	position: fixed;
+	top: 200px;
+	left: 10px;
+	width: calc(100% - 20px); 
+	max-width: 400px;
+	height: 0;
+	background-color: #ffffff;
+	overflow: hidden;
+	border-radius: 4px;
+	transition: .7s ease-out;
+}
+
+.modal img{
+	width: 50px;
+}
+
+.modal.-active{
+	height: 300px;
+}
+
+.modal-info{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+}
+
+.modal-info a{
+	margin: 0 15px;
+	transition: .3s ease-out;
+	transform: translateY(-200%);
+}
+
+.modal-info a.-active{
+	transform: translateY(0);
+}
+
+.modal-map{
+	height: 200px;
+	transition: .3s ease-out;
+	transform: translateY(200%);
+}
+
+.modal-map.-active{
+	transform: translateY(0);
+}
+
+
+.modal-toggler{
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	width: 15px;
+	height: 15px;
+	transition: .3s;
+	transform: translateX(-200%);
+}
+
+.modal-toggler.-active{
+	transform: translate(0);
+}
+
+.modal-toggler:after,
+.modal-toggler:before{
+	position: absolute;
+	display: block;
+	content: "";
+	width: 21px;
+	height: 1px;
+	background-color: #565656;
+}
+
+.modal-toggler:after{
+	transform: translateY(50%) rotate(45deg);
+}
+
+.modal-toggler:before{
+	transform: translateY(50%) rotate(-45deg);
+}
+
+@media screen and (min-width: 600px){
+	.modal{
+		top: 40%;
+		left: auto;
+		max-width: 600px;
+		right: 5%;
+		transform: translateY(-50%);
+	}
+}
